@@ -27,4 +27,5 @@ Additional features added
   allocates a vector of element type T and populates it with the tree elements between min and max in       order. A pointer ot the allocated and populated is returned. runtime: height of tree + k num of elements    in the range.
   
 Size-balancing property formula: 
+  
   max(num_left_nodes, num_right_nodes) <= 2 * min(num_left_nodes, num_right_nodes) + 1
