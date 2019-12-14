@@ -51,7 +51,6 @@ private:
    *
    * returns:   pointer to root of tree after insertion.
    *
-   * notes:     if x is already in tree, no modifications are made.
    */
   static bst_node * _insert(bst_node *r, T & x, bool &success){
     if(r == nullptr){
@@ -85,7 +84,6 @@ public:
    *            if x is already in t when call made, no 
    *            modifications to tree result.
    *
-   * note:      helper function does most of the work.
    *
    */
   bool insert(T & x){
@@ -235,7 +233,7 @@ public:
    *
    *****************************************/
   
-  /* TODO //? DONE
+  /* 
     * Function:  to_vector
     * Description:  allocates a vector of type T and populates
     *               it with the elements of the tree in sorted
@@ -255,7 +253,7 @@ public:
   }
 
 
-  /* TODO //?DONE
+  /* 
     * Function:  get_ith
     * Description:  determines the ith smallest element in t and
     *    "passes it back" to the caller via the reference parameter x.  
@@ -343,7 +341,7 @@ private:
 
 public:
 
-/* TODO //? DONE
+/* 
   * Function: position_of 
   * Description:  this is like the inverse of
   *       get_ith:  given a value x, determine the 
@@ -372,7 +370,7 @@ int position_of(const T & x) {
   return i;
 }
 
-/* TODO //? DONE
+/* 
   * Function:  num_geq
   * Description:  returns the number of elements in tree which are 
   *       greater than or equal to x.
@@ -448,7 +446,7 @@ private:
 
 public:
 
-  /* TODO //?DONE
+  /*
     * Function:  num_leq
     * Description:  returns the number of elements in tree which are less
     *      than or equal to x.
@@ -502,7 +500,7 @@ private:
 
 public:
 
-  /* TODO //?DONE
+  /*
     * Function:  num_range
     * Description:  returns the number of elements in tree which are
     *       between min and max (inclusive).
@@ -543,7 +541,7 @@ private:
 
 public:
 
-  /* //?DONE
+  /*
     * TODO
     * function:     extract_range
     * Description:  allocates a vector of element type T
@@ -713,9 +711,6 @@ public:
 
 private:
 
-  /*
-    * DO NOT MODIFY THE TWO FUNCTIONS BELOW!!!
-    */
   static void _to_preorder_vec(bst_node *t, std::vector<T> &vec) {
     if(t==nullptr) return;
     vec.push_back(t->val);
@@ -728,9 +723,6 @@ private:
     return vec;
   }
 
-  /*
-  * Finally, the data members of the bst class
-  */
 private:
   bst_node *root;
 
