@@ -1,5 +1,4 @@
 # BST
-Data Structure - Project 3
 
 For this project, I had to modify a binary search tree to implement size balancing along with some other new features.
 
